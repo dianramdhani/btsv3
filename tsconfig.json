@@ -27,6 +27,9 @@
       ],
       "@env/*": [
         "environment/*"
+      ],
+      "@modules/*": [
+        "app/modules/*"
       ]
     }
   },

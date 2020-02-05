@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
-
+import { SuperAdminLayoutComponent } from './layout/super-admin-layout/super-admin-layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ContentLayoutComponent
+    redirectTo: '/super-admin',
+    pathMatch: 'full'
+  },
+  {
+    path: 'super-admin',
+    component: SuperAdminLayoutComponent,
+    children: [
+      { path: 'baggage-tracking', loadChildren: () => import('@modules/baggage-tracking/baggage-tracking.module').then(m => m.BaggageTrackingModule) }
+    ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
