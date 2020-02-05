@@ -26,7 +26,8 @@
                             <strong class="d-block">Check In Station</strong>
                             <small class="tx-color-03">
                                 2 February 2020 19:00
-                                <span class="mg-l-10 plus">+2H 3m</span>
+                                <span class="mg-l-10 plus" [ngbPopover]="popover.content"
+                                    triggers="mouseenter:mouseleave" [popoverTitle]="popover.title">+2H 3m</span>
                             </small>
                         </div>
                     </li>

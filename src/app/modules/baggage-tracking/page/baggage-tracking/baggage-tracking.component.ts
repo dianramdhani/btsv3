@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baggage-tracking.component.scss']
 })
 export class BaggageTrackingComponent implements OnInit {
+  popover = {
+    content: 'Penyebab keterlambatan?',
+    title: 'Barang terlambat'
+  };
 
   constructor() { }
 
