@@ -1,0 +1,24 @@
+.active {
+    .activity-icon {
+        color: #10b759;
+        background-color: rgba(16, 183, 89, 0.18);
+    }
+
+    .plus {
+        color: #dc3545;
+    }
+
+    .minus {
+        color: #0168fa;
+    }
+}
+
+.inactive {
+    .activity-icon {
+        color: #8392a5;
+    }
+
+    .activity-body {
+        margin-top: 10px;
+    }
+}

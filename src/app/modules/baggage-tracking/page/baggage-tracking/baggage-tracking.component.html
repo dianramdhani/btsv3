@@ -1,0 +1,122 @@
+<div class="d-md-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+    <h4 class="mg-b-0 tx-spacing--1">Baggage Tracking</h4>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+            <li class="breadcrumb-item">Dashboard</li>
+            <li class="breadcrumb-item active" aria-current="page">Baggage Tracking</li>
+        </ol>
+    </nav>
+</div>
+<div class="row row-xs">
+    <div class="col-lg-4 col-md-6 mg-b-10">
+        <div class="card">
+            <h6 class="card-header tx-gray-500">Baggage 1</h6>
+            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <div class="mb-2">Last position in</div>
+                <h2 class="tx-success">Security Check</h2>
+                <div class="tx-italic tx-gray-500">Estimate 17H 2m to <strong class="tx-primary">Arrival</strong></div>
+            </div>
+            <div class="card-footer d-flex justify-content-center">
+                <ul class="activity tx-13 pd-y-20">
+                    <li class="activity-item active">
+                        <div class="activity-icon">
+                            <i data-feather="check"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Check In Station</strong>
+                            <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 plus" [ngbPopover]="popover.content"
+                                    triggers="mouseenter:mouseleave" [popoverTitle]="popover.title">+2H 3m</span>
+                            </small>
+                        </div>
+                    </li>
+                    <li class="activity-item active">
+                        <div class="activity-icon">
+                            <i data-feather="check"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Security Check</strong>
+                            <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small>
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Sorting Gate</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Loading Gate</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Unloading Gate</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Transfer Pool</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Transfer Security Check</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                    <li class="activity-item inactive">
+                        <div class="activity-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="activity-body">
+                            <strong class="d-block">Arrival Pool</strong>
+                            <!-- <small class="tx-color-03">
+                                2 February 2020 19:00
+                                <span class="mg-l-10 minus">-2H 3m</span>
+                            </small> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
